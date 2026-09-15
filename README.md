@@ -1,1 +1,1 @@
-# -sistemes_operatius
+# sistemes_operatius
