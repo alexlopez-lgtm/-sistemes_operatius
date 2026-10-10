@@ -243,3 +243,22 @@ footer.peu .autoria strong { color: var(--tinta); }
 .bloc-llicencia h3 { margin: 0 0 8px; font-size: 1rem; color: var(--mari); }
 .bloc-llicencia p { margin: 6px 0; font-size: 0.92rem; }
 .bloc-llicencia .badge-cc { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+
+.boton-documento {
+display: inline-block;
+background-color: #087f8c;
+color: white;
+font-size: 24px;
+font-weight: bold;
+padding: 20px 35px;
+margin: 30px auto;
+border-radius: 12px;
+text-decoration: none;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s ease;
+}
+
+.boton-documento {
+background-color: #065f68;
+}
