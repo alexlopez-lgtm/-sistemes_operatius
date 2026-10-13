@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows · Sistemes Operatius</title>
+    <title>Pràctica Windows · Sistemes Operatius</title>
     <link rel="stylesheet" href="css/estils.css">
 </head>
 
@@ -26,8 +26,10 @@
                 Windows
             </p>
 
-            <h1>Pràctica de Windows</h1>
-            <p class="subtitol">Instal·lació i configuració de Windows</p>
+            <h1>Pràctica · Windows</h1>
+            <p class="subtitol">
+                Instal·lació i configuració de Windows
+            </p>
         </div>
 
     </header>
@@ -37,43 +39,356 @@
             <section class="panell">
 
                 <p>
-                    Aquí tens l'índex dels apartats de la pràctica
-                    de Windows.
+                    Aquesta pràctica està dividida en cinc parts.
+                    Aquí trobaràs els exercicis i les instruccions
+                    de cada apartat.
                 </p>
 
-                <div class="rejilla-targetes">
+                <!-- ÍNDEX D'APARTATS -->
 
-                    <a href="#" class="targeta">
-                        <span class="numero">PART 1</span>
-                        <h3></h3>
-                        <p>Veure apartats →</p>
-                    </a>
+                <table class="taula-apartats">
 
-                    <a href="#" class="targeta">
-                        <span class="numero">PART 2</span>
-                        <h3></h3>
-                        <p>Veure apartats →</p>
-                    </a>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Apartat</th>
+                        </tr>
+                    </thead>
 
-                    <a href="#" class="targeta">
-                        <span class="numero">PART 3</span>
-                        <h3></h3>
-                        <p>Veure apartats →</p>
-                    </a>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#apartat1">Màquina virtual, instal·lació i particions</a></td>
+                        </tr>
 
-                    <a href="#" class="targeta">
-                        <span class="numero">PART 4</span>
-                        <h3></h3>
-                        <p>Veure apartats →</p>
-                    </a>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#apartat2">Llicències</a></td>
+                        </tr>
 
-                    <a href="#" class="targeta">
-                        <span class="numero">PART 5</span>
-                        <h3></h3>
-                        <p>Veure apartats →</p>
-                    </a>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="#apartat3">Comandes bàsiques</a></td>
+                        </tr>
 
-                </div>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="#apartat4">Aplicacions i punts de restauració</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><a href="#apartat5">Xarxa</a></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+                <!-- APARTAT 1 -->
+
+                <section class="apartat" id="apartat1">
+
+                    <h2>1. Màquina virtual, instal·lació i particions</h2>
+
+                    <p>
+                        Una màquina virtual és un ordinador simulat
+                        que funciona dins del teu. Hi instal·laràs
+                        Windows a partir d'una imatge ISO i repartiràs
+                        el disc en particions.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Crea a VirtualBox una màquina anomenada
+                            Windows-NomCognom amb 4 GB de RAM i un
+                            disc de 50 GB.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            A Configuració → Xarxa, comprova que
+                            l'Adaptador 1 està habilitat i en mode NAT.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Carrega la ISO de Windows 10 i comença
+                            la instal·lació (idioma, usuari amb el
+                            teu nom i contrasenya).
+                        </li>
+
+                        <li>
+                            A la pantalla de particions, crea una
+                            partició de 30 GB per a Windows i deixa
+                            els altres 20 GB sense assignar.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Quan arrenqui Windows, obre
+                            <code>diskmgmt.msc</code> i amb l'espai
+                            lliure crea una partició NTFS amb la
+                            lletra D: i el nom DADES.
+                            <strong>CAPTURA</strong>
+                        </li>
+                    </ol>
+
+                    <p>
+                        <strong>Atenció:</strong> no facis servir
+                        tot el disc per a Windows. Deixa els 20 GB
+                        lliures per poder crear la partició DADES.
+                        Windows també crearà unes particions petites
+                        per al sistema; és normal.
+                    </p>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
+
+
+                <!-- APARTAT 2 -->
+
+                <section class="apartat" id="apartat2">
+
+                    <h2>2. Llicències</h2>
+
+                    <p>
+                        Windows necessita una llicència per utilitzar-se
+                        legalment. Hi ha llicències Retail, OEM i de
+                        volum. Als servidors, a més, hi ha les CAL.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Ves a Configuració → Sistema → Activació
+                            i anota l'edició de Windows i si està activat.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Al CMD, executa
+                            <code>slmgr /xpr</code> (estat de l'activació)
+                            i <code>slmgr /dli</code> (tipus de llicència).
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Busca el preu de Windows 11 Home i Pro a
+                            la botiga oficial de Microsoft i a una
+                            altra botiga.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Busca què és una CAL (Client Access License)
+                            a la web de Microsoft.
+                            <strong>CAPTURA</strong>
+                        </li>
+                    </ol>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
+
+
+                <!-- APARTAT 3 -->
+
+                <section class="apartat" id="apartat3">
+
+                    <h2>3. Comandes bàsiques</h2>
+
+                    <p>
+                        La línia de comandes permet donar ordres a
+                        l'ordinador escrivint. Obre el Símbol del
+                        sistema (CMD) i fes els passos en ordre.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Entra a l'Escriptori amb
+                            <code>cd Desktop</code>, crea una carpeta
+                            amb <code>mkdir practica</code> i entra-hi
+                            amb <code>cd practica</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Crea un fitxer amb
+                            <code>echo hola &gt; nota.txt</code>
+                            i comprova que hi és amb <code>dir</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Fes-ne una còpia:
+                            <code>copy nota.txt copia.txt</code>
+                            i comprova-ho amb <code>dir</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Crea la carpeta <code>mkdir arxiu</code>
+                            i mou-hi la còpia amb
+                            <code>move copia.txt arxiu</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Canvia el nom del fitxer:
+                            <code>ren nota.txt notes.txt</code>,
+                            i el de la carpeta:
+                            <code>ren arxiu backup</code>.
+                            Comprova-ho amb <code>dir</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Entra a la carpeta amb
+                            <code>cd backup</code>, mira què hi ha
+                            amb <code>dir</code> i surt amb
+                            <code>cd ..</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Mostra l'estructura amb
+                            <code>tree /f</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Esborra el fitxer amb
+                            <code>del notes.txt</code> i comprova-ho
+                            amb <code>dir</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Neteja la pantalla amb <code>cls</code>.
+                        </li>
+                    </ol>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
+
+
+                <!-- APARTAT 4 -->
+
+                <section class="apartat" id="apartat4">
+
+                    <h2>4. Aplicacions i punts de restauració</h2>
+
+                    <p>
+                        Un punt de restauració guarda l'estat del
+                        sistema en un moment concret. Serveix per
+                        tornar a una configuració anterior si apareix
+                        algun problema.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Busca «Crear un punt de restauració»,
+                            activa la protecció del sistema al disc C:
+                            i crea un punt anomenat
+                            <strong>Abans de Chrome</strong>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Descarrega Chrome de la web oficial de
+                            Google, instal·la'l i obre'l.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Ves a Restaurar sistema, tria el punt
+                            creat i prem «Cerca programes afectats»:
+                            hi ha d'aparèixer Chrome.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Restaura el sistema i comprova que Chrome
+                            ja no hi és.
+                            <strong>CAPTURA</strong>
+                        </li>
+                    </ol>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
+
+
+                <!-- APARTAT 5 -->
+
+                <section class="apartat" id="apartat5">
+
+                    <h2>5. Xarxa</h2>
+
+                    <p>
+                        Per tenir Internet, l'equip necessita una
+                        adreça IP, una connexió activa i un servidor
+                        DNS. Amb les comandes ping pots comprovar
+                        la connexió i detectar problemes.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Amb l'adaptador en mode NAT, executa
+                            <code>ipconfig</code>,
+                            <code>ping google.com</code> i
+                            <code>ping 8.8.8.8</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            A VirtualBox, ves a Dispositius → Xarxa,
+                            desmarca «Connecta el cable» i repeteix
+                            els dos ping.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Torna a connectar el cable i canvia
+                            l'adaptador a Adaptador pont. Repeteix
+                            <code>ipconfig</code> i els dos ping.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            A Windows, posa el DNS manual
+                            <code>1.2.3.4</code> i repeteix els dos
+                            ping. Després torna a posar el DNS
+                            en automàtic.
+                            <strong>CAPTURA</strong>
+                        </li>
+                    </ol>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
 
             </section>
         </div>
