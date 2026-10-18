@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Xarxa · Pràctica Windows</title>
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+<body id="top">
+    <header class="hero">
+        <nav class="hero-nav">
+            <a href="index.html">Portada</a>
+            <a href="sprints.html">Índex de sprints</a>
+            <a href="windows.html">Windows</a>
+            <a href="https://github.com/">Codi a GitHub →</a>
+        </nav>
+        <div class="hero-titol">
+            <p class="miguetes"><a href="index.html">Portada</a> / <a href="windows.html">Windows</a> / Apartat 5</p>
+            <h1>Pràctica · Windows</h1>
+            <p class="subtitol">Xarxa</p>
+        </div>
+    </header>
+    <main>
+        <div class="contenidor">
+            <section class="panell">
+                <a class="tornar-index" href="windows.html">← Tornar als apartats de Windows</a>
+                <section class="apartat" id="apartat5">
+
+                    <h2>5. Xarxa</h2>
+
+                    <p>
+                        Per tenir Internet, l'equip necessita una
+                        adreça IP, una connexió activa i un servidor
+                        DNS. Amb les comandes ping pots comprovar
+                        la connexió i detectar problemes.
+                    </p>
+
+                    <h3>Què has de fer</h3>
+
+                    <ol>
+                        <li>
+                            Amb l'adaptador en mode NAT, executa
+                            <code>ipconfig</code>,
+                            <code>ping google.com</code> i
+                            <code>ping 8.8.8.8</code>.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            A VirtualBox, ves a Dispositius → Xarxa,
+                            desmarca «Connecta el cable» i repeteix
+                            els dos ping.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            Torna a connectar el cable i canvia
+                            l'adaptador a Adaptador pont. Repeteix
+                            <code>ipconfig</code> i els dos ping.
+                            <strong>CAPTURA</strong>
+                        </li>
+
+                        <li>
+                            A Windows, posa el DNS manual
+                            <code>1.2.3.4</code> i repeteix els dos
+                            ping. Després torna a posar el DNS
+                            en automàtic.
+                            <strong>CAPTURA</strong>
+                        </li>
+                    </ol>
+
+                    <!-- AFEGEIX AQUÍ LES CAPTURES -->
+
+                    <a class="tornar-index" href="#top">↑ Tornar a l'índex</a>
+
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="peu">
+        <p class="autoria">Pràctica · Windows · Sistemes Operatius</p>
+    </footer>
+</body>
+</html>
