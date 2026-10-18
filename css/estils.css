@@ -1,5 +1,8 @@
 
-/* Full de estils comu per a tot el lloc. */
+/* Full d'estils comu per a tot el lloc.
+   Enllaça-la sempre igual:
+   <link rel="stylesheet" href="../css/estils.css"> (des d'una carpeta de sprint)
+   <link rel="stylesheet" href="css/estils.css"> (des de l'arrel) */
 
 :root {
   --mari: #122542;
@@ -15,10 +18,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -38,13 +37,15 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Contenidor principal */
+
 .contenidor {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* ---------- Capçalera ---------- */
+/* Capçalera */
 
 .hero {
   background: linear-gradient(
@@ -108,7 +109,7 @@ a:hover {
   font-size: 1.05rem;
 }
 
-/* ---------- Panell blanc ---------- */
+/* Panell principal */
 
 main {
   padding-bottom: 50px;
@@ -124,7 +125,7 @@ main {
   z-index: 1;
 }
 
-/* ---------- Portada ---------- */
+/* Portada */
 
 .portada-hero {
   text-align: center;
@@ -155,6 +156,8 @@ main {
   color: var(--mari);
 }
 
+/* Botons */
+
 .boto {
   display: inline-block;
   background: var(--teal);
@@ -170,7 +173,7 @@ main {
   background: var(--mari);
 }
 
-/* ---------- Targetes ---------- */
+/* Graella de targetes: sprints i apartats de Windows */
 
 .rejilla-targetes {
   display: grid;
@@ -217,6 +220,8 @@ main {
   font-size: 0.9rem;
 }
 
+/* Títols i consells */
+
 h1,
 h2 {
   color: var(--mari);
@@ -234,7 +239,7 @@ h2 {
   border-radius: 4px;
 }
 
-/* ---------- Taula d'apartats ---------- */
+/* Taula d'apartats */
 
 .taula-apartats {
   width: 100%;
@@ -270,7 +275,7 @@ h2 {
   font-weight: 600;
 }
 
-/* ---------- Apartats de la pràctica ---------- */
+/* Contingut dels apartats */
 
 .apartat {
   scroll-margin-top: 20px;
@@ -299,12 +304,10 @@ h2 {
 }
 
 .tornar-index {
-  display: inline-block;
-  margin-top: 12px;
   font-size: 0.85rem;
 }
 
-/* ---------- Peu de pàgina ---------- */
+/* Peu de pàgina */
 
 footer.peu {
   text-align: center;
@@ -334,7 +337,7 @@ footer.peu .autoria strong {
   color: var(--tinta);
 }
 
-/* ---------- Bloc de llicència ---------- */
+/* Bloc de llicència a la portada */
 
 .bloc-llicencia {
   border: 1px solid var(--vora);
@@ -363,7 +366,7 @@ footer.peu .autoria strong {
   margin-top: 10px;
 }
 
-/* ---------- Botó de document ---------- */
+/* Botó de document */
 
 .boton-documento {
   display: inline-block;
@@ -382,106 +385,4 @@ footer.peu .autoria strong {
 
 .boton-documento:hover {
   background-color: #087f8c;
-}
-
-/* ==========================================
-   BOTONS ESTIL WINDOWS - PRACTICA WINDOWS
-   ========================================== */
-
-.windows-parts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin: 25px 0;
-}
-
-.windows-part {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  min-height: 90px;
-  padding: 16px;
-  background: #ffffff;
-  color: #1b2430;
-  border: 1px solid #d7dce2;
-  border-left: 5px solid #0078d4;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
-  transition: background-color 0.2s ease,
-              border-color 0.2s ease,
-              box-shadow 0.2s ease,
-              transform 0.2s ease;
-}
-
-.windows-part:hover {
-  background: #f0f7fd;
-  border-color: #0078d4;
-  box-shadow: 0 5px 14px rgba(0, 120, 212, 0.16);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-.windows-part:focus-visible {
-  outline: 3px solid #0078d4;
-  outline-offset: 3px;
-}
-
-.windows-number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  background: #0078d4;
-  color: white;
-  border-radius: 4px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.windows-text {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 3px;
-}
-
-.windows-text strong {
-  color: #1b2430;
-  font-size: 15px;
-  line-height: 1.35;
-}
-
-.windows-text small {
-  color: #57626c;
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-.windows-arrow {
-  color: #0078d4;
-  font-size: 27px;
-  line-height: 1;
-}
-
-/* ---------- Adaptació a mòbils ---------- */
-
-@media (max-width: 600px) {
-  .panell {
-    padding: 24px 18px;
-  }
-
-  .windows-parts {
-    grid-template-columns: 1fr;
-  }
-
-  .windows-part {
-    min-height: 76px;
-  }
-
-  .hero-titol h1 {
-    font-size: 1.7rem;
-  }
 }
