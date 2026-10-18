@@ -1,7 +1,5 @@
-/* Full de estils comu per a tot el lloc.
-   Enllaça-la sempre igual:
-   <link rel="stylesheet" href="../css/estils.css">  (des d'una carpeta de sprint)
-   <link rel="stylesheet" href="css/estils.css">      (des de l'arrel) */
+
+/* Full de estils comu per a tot el lloc. */
 
 :root {
   --mari: #122542;
@@ -15,7 +13,13 @@
   --radi: 12px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -25,8 +29,14 @@ body {
   line-height: 1.55;
 }
 
-a { color: var(--teal); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .contenidor {
   max-width: 900px;
@@ -34,9 +44,15 @@ a:hover { text-decoration: underline; }
   padding: 0 20px;
 }
 
-/* ---------- Capçalera / hero (present a totes les pàgines) ---------- */
+/* ---------- Capçalera ---------- */
+
 .hero {
-  background: linear-gradient(125deg, var(--mari) 0%, var(--teal) 55%, var(--ambre) 100%);
+  background: linear-gradient(
+    125deg,
+    var(--mari) 0%,
+    var(--teal) 55%,
+    var(--ambre) 100%
+  );
   padding-bottom: 60px;
   color: var(--blanc);
 }
@@ -58,7 +74,11 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   text-decoration: none;
 }
-.hero-nav a:hover { background: rgba(255, 255, 255, 0.24); text-decoration: none; }
+
+.hero-nav a:hover {
+  background: rgba(255, 255, 255, 0.24);
+  text-decoration: none;
+}
 
 .hero-titol {
   text-align: center;
@@ -70,7 +90,11 @@ a:hover { text-decoration: underline; }
   opacity: 0.85;
   margin: 0 0 10px;
 }
-.hero-titol .miguetes a { color: #fff; text-decoration: underline; }
+
+.hero-titol .miguetes a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 .hero-titol h1 {
   margin: 0 0 8px;
@@ -84,8 +108,11 @@ a:hover { text-decoration: underline; }
   font-size: 1.05rem;
 }
 
-/* ---------- Panell blanc flotant que xafa el hero ---------- */
-main { padding-bottom: 50px; }
+/* ---------- Panell blanc ---------- */
+
+main {
+  padding-bottom: 50px;
+}
 
 .panell {
   background: var(--blanc);
@@ -98,7 +125,11 @@ main { padding-bottom: 50px; }
 }
 
 /* ---------- Portada ---------- */
-.portada-hero { text-align: center; }
+
+.portada-hero {
+  text-align: center;
+}
+
 .portada-hero img.imatge-portada {
   max-width: 300px;
   width: 100%;
@@ -115,8 +146,14 @@ main { padding-bottom: 50px; }
   margin: 20px 0;
   text-align: left;
 }
-.fitxa-alumne p { margin: 3px 0; }
-.fitxa-alumne strong { color: var(--mari); }
+
+.fitxa-alumne p {
+  margin: 3px 0;
+}
+
+.fitxa-alumne strong {
+  color: var(--mari);
+}
 
 .boto {
   display: inline-block;
@@ -128,9 +165,13 @@ main { padding-bottom: 50px; }
   text-decoration: none !important;
   margin-top: 8px;
 }
-.boto:hover { background: var(--mari); }
 
-/* ---------- Graella de targetes (sprints / apartats) ---------- */
+.boto:hover {
+  background: var(--mari);
+}
+
+/* ---------- Targetes ---------- */
+
 .rejilla-targetes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,11 +187,13 @@ main { padding-bottom: 50px; }
   padding: 18px 20px;
   transition: box-shadow 0.15s, transform 0.15s;
 }
+
 .targeta:hover {
   box-shadow: 0 4px 14px rgba(12, 110, 115, 0.18);
   transform: translateY(-2px);
   text-decoration: none;
 }
+
 .targeta .numero {
   display: inline-block;
   background: var(--teal);
@@ -161,64 +204,115 @@ main { padding-bottom: 50px; }
   border-radius: 999px;
   margin-bottom: 8px;
 }
-.targeta h3 { margin: 0 0 4px; color: var(--tinta); font-size: 1.05rem; }
-.targeta p { margin: 0; color: var(--tinta-suau); font-size: 0.9rem; }
 
-h1, h2 { color: var(--mari); }
+.targeta h3 {
+  margin: 0 0 4px;
+  color: var(--tinta);
+  font-size: 1.05rem;
+}
+
+.targeta p {
+  margin: 0;
+  color: var(--tinta-suau);
+  font-size: 0.9rem;
+}
+
+h1,
+h2 {
+  color: var(--mari);
+}
 
 .consell {
   color: var(--tinta-suau);
   font-size: 0.9rem;
   margin-top: 18px;
 }
-.consell code { background: var(--fons); padding: 1px 5px; border-radius: 4px; }
 
-/* ---------- Taula d'apartats (índex intern d'un sprint, amb ancoratges) ---------- */
+.consell code {
+  background: var(--fons);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+/* ---------- Taula d'apartats ---------- */
+
 .taula-apartats {
   width: 100%;
   border-collapse: collapse;
   margin: 6px 0 8px;
 }
-.taula-apartats th, .taula-apartats td {
+
+.taula-apartats th,
+.taula-apartats td {
   text-align: left;
   padding: 10px 12px;
   border-bottom: 1px solid var(--vora);
 }
+
 .taula-apartats th {
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--tinta-suau);
 }
-.taula-apartats td:first-child, .taula-apartats th:first-child { width: 46px; color: var(--tinta-suau); }
-.taula-apartats tr:hover td { background: var(--fons); }
-.taula-apartats a { font-weight: 600; }
 
-/* ---------- Contingut d'un apartat, dins de la mateixa pàgina ---------- */
+.taula-apartats td:first-child,
+.taula-apartats th:first-child {
+  width: 46px;
+  color: var(--tinta-suau);
+}
+
+.taula-apartats tr:hover td {
+  background: var(--fons);
+}
+
+.taula-apartats a {
+  font-weight: 600;
+}
+
+/* ---------- Apartats de la pràctica ---------- */
+
 .apartat {
   scroll-margin-top: 20px;
   padding-top: 26px;
   margin-top: 26px;
   border-top: 1px solid var(--vora);
 }
-.apartat h2 { margin-top: 0; }
+
+.apartat h2 {
+  margin-top: 0;
+}
+
 .apartat img {
   max-width: 100%;
   border-radius: var(--radi);
   border: 1px solid var(--vora);
   margin: 14px 0;
 }
-.apartat ul { padding-left: 22px; }
-.apartat li { margin: 4px 0; }
-.tornar-index { font-size: 0.85rem; }
 
-/* ---------- Peu de pàgina: llicència i autoria (fix a totes les pàgines) ---------- */
+.apartat ul {
+  padding-left: 22px;
+}
+
+.apartat li {
+  margin: 4px 0;
+}
+
+.tornar-index {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+}
+
+/* ---------- Peu de pàgina ---------- */
+
 footer.peu {
   text-align: center;
   color: var(--tinta-suau);
   font-size: 0.85rem;
   padding: 30px 20px 46px;
 }
+
 .peu-llicencia {
   display: flex;
   align-items: center;
@@ -227,11 +321,21 @@ footer.peu {
   flex-wrap: wrap;
   margin: 0 0 8px;
 }
-.peu-llicencia img { display: block; }
-footer.peu .autoria { margin: 0; }
-footer.peu .autoria strong { color: var(--tinta); }
 
-/* ---------- Bloc de llicència a la portada ---------- */
+.peu-llicencia img {
+  display: block;
+}
+
+footer.peu .autoria {
+  margin: 0;
+}
+
+footer.peu .autoria strong {
+  color: var(--tinta);
+}
+
+/* ---------- Bloc de llicència ---------- */
+
 .bloc-llicencia {
   border: 1px solid var(--vora);
   border-radius: var(--radi);
@@ -240,25 +344,144 @@ footer.peu .autoria strong { color: var(--tinta); }
   text-align: left;
   background: var(--fons);
 }
-.bloc-llicencia h3 { margin: 0 0 8px; font-size: 1rem; color: var(--mari); }
-.bloc-llicencia p { margin: 6px 0; font-size: 0.92rem; }
-.bloc-llicencia .badge-cc { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
 
-.boton-documento {
-display: inline-block;
-background-color: #087f8c;
-color: white;
-font-size: 24px;
-font-weight: bold;
-padding: 20px 35px;
-margin: 30px auto;
-border-radius: 12px;
-text-decoration: none;
-text-align: center;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-transition: background-color 0.3s ease;
+.bloc-llicencia h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: var(--mari);
 }
 
+.bloc-llicencia p {
+  margin: 6px 0;
+  font-size: 0.92rem;
+}
+
+.bloc-llicencia .badge-cc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ---------- Botó de document ---------- */
+
 .boton-documento {
-background-color: #065f68;
+  display: inline-block;
+  background-color: #065f68;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 35px;
+  margin: 30px auto;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.boton-documento:hover {
+  background-color: #087f8c;
+}
+
+/* ==========================================
+   BOTONS ESTIL WINDOWS - PRACTICA WINDOWS
+   ========================================== */
+
+.windows-parts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.windows-part {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 90px;
+  padding: 16px;
+  background: #ffffff;
+  color: #1b2430;
+  border: 1px solid #d7dce2;
+  border-left: 5px solid #0078d4;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+.windows-part:hover {
+  background: #f0f7fd;
+  border-color: #0078d4;
+  box-shadow: 0 5px 14px rgba(0, 120, 212, 0.16);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.windows-part:focus-visible {
+  outline: 3px solid #0078d4;
+  outline-offset: 3px;
+}
+
+.windows-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: #0078d4;
+  color: white;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.windows-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
+}
+
+.windows-text strong {
+  color: #1b2430;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.windows-text small {
+  color: #57626c;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.windows-arrow {
+  color: #0078d4;
+  font-size: 27px;
+  line-height: 1;
+}
+
+/* ---------- Adaptació a mòbils ---------- */
+
+@media (max-width: 600px) {
+  .panell {
+    padding: 24px 18px;
+  }
+
+  .windows-parts {
+    grid-template-columns: 1fr;
+  }
+
+  .windows-part {
+    min-height: 76px;
+  }
+
+  .hero-titol h1 {
+    font-size: 1.7rem;
+  }
 }
