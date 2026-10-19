@@ -1,137 +1,215 @@
+
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sprint 1 · Instal·lació i configuració inicial</title>
-<link rel="stylesheet" href="../css/estils.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1 · Instal·lació i configuració inicial</title>
+    <link rel="stylesheet" href="../css/estils.css">
 </head>
-<body>
+<body id="top">
 
-<header class="hero">
-  <nav class="hero-nav">
-    <a href="../index.html">Portada</a>
-    <a href="../sprints.html">Índex de sprints</a>
-    <a href="https://github.com/" target="_blank" rel="noopener">Codi a GitHub ↗</a>
-  </nav>
-  <div class="hero-titol">
-    <p class="miguetes"><a href="../index.html">Portada</a> / <a href="../sprints.html">Índex de sprints</a> / Sprint 1</p>
-    <h1>Sprint 1 · Instal·lació i configuració inicial</h1>
-    <p class="subtitol">Índex d'apartats d'aquest sprint</p>
-  </div>
-</header>
+    <header>
+        <h1>Sprint 1 · Instal·lació i configuració inicial</h1>
+        <p>Desenvolupament d'Aplicacions Multiplataforma</p>
+        <p>0483 – Sistemes Informàtics</p>
+    </header>
 
-<main class="contenidor">
-  <section class="panell">
-    <a id="index-apartats"></a>
-    <table class="taula-apartats">
-      <thead>
-        <tr><th>#</th><th>Apartat</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td><a href="#apartat1">Instal·lació del sistema operatiu</a></td></tr>
-        <tr><td>2</td><td><a href="#apartat2">Configuració de xarxa bàsica</a></td></tr>
-        <tr><td>3</td><td><a href="#apartat3">Creació d'usuaris i grups</a></td></tr>
-        <tr><td>4</td><td><a href="#apartat4">Comprovació final</a></td></tr>
-        <tr><td>5</td><td><a href="#apartat5">Nom de l'apartat</a></td></tr>.
-      </tbody>
-    </table>
+    <nav>
+        <a href="../index.html">Portada</a>
+        <a href="../sprints.html">Índex de sprints</a>
+        <a href="../windows.html">Windows</a>
+    </nav>
 
-    <article class="apartat" id="apartat1">
-      <h2>1. Instal·lació del sistema operatiu</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Un cop arrencat
-         el suport d'instal·lació, cal seguir l'assistent i triar les opcions de
-         particionat abans de continuar. <strong>Aquest pas és irreversible</strong>,
-         així que revisa bé el disc de destinació.</p>
-      <ul>
-        <li>Arrencar des del USB o la imatge ISO.</li>
-        <img src="../img/Captura de pantalla de 2026-10-06 13-59-00.png">
-        
-        <li>Triar l'idioma i la distribució de teclat.</li>
-        <img src="../img/Captura de pantalla de 2026-10-06 13-59-19.png">
-        
-        <li>Configurar el particionat del disc.</li>
-        <img src="../img/Captura de pantalla de 2026-10-06 13-59-43.png">
-        <img src="../img/Captura de pantalla de 2026-10-06 14-00-36.png">
-          
-        <li>Esperar que finalitzi la còpia d'arxius i reiniciar.</li>
-        <img src="../img/Captura de pantalla de 2026-10-06 14-03-54.png">
-        
-      </ul>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-         Un cop reiniciat el sistema, comprova que arrenca correctament i que
-         reconeix tot el maquinari abans de continuar amb el següent apartat.</p>
-      <img src="../img/Captura de pantalla de 2026-10-06 14-21-48.png">
-      <p class="tornar-index"><a href="#index-apartats">↑ Tornar a l'índex</a></p>
-    </article>
-    <article class="apartat" id="apartat2">
-      <h2>2. Configuració de xarxa bàsica</h2>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-         ut aliquip ex ea commodo consequat. La configuració de xarxa és
-         <strong>imprescindible</strong> per poder actualitzar el sistema i
-         instal·lar programari nou.</p>
-      <ul>
-        <li>Comprovar l'adreça IP assignada amb <code>ip a</code>.</li>
-        <img src="../img/Captura de pantalla de 2026-10-09 19-47-21.png">
-        
-        <li>Configurar una IP estàtica si el servei ho requereix.</li>
-        <li>Verificar la connectivitat amb <code>ping</code>.</li>
-        <img src="../img/Captura de pantalla de 2026-10-09 20-07-26.png">
-        
-      </ul>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="tornar-index"><a href="#index-apartats">↑ Tornar a l'índex</a></p>
-    </article>
-    <article class="apartat" id="apartat3">
-      <h2>3. Creació d'usuaris i grups</h2>
-      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-         blanditiis praesentium voluptatum deleniti atque corrupti. Cada
-         usuari nou s'hauria d'assignar al <strong>grup mínim necessari</strong>
-         segons les tasques que ha de fer.</p>
-      <ul>
-        <li>Crear l'usuari amb <code>useradd</code>.</li>
-        <img src="../img/Captura de pantalla de 2026-10-09 20-32-54.png">
-        
-        <li>Assignar contrasenya amb <code>passwd</code>.</li>
-        <img src="../img/Captura de pantalla de 2026-10-09 20-35-11.png">
-        
-        <li>Afegir l'usuari als grups necessaris amb <code>usermod -aG</code>.</li>
-        <img src="../img/Captura de pantalla de 2026-10-09 20-35-28.png">
-        
-      </ul>
-      <p class="tornar-index"><a href="#index-apartats">↑ Tornar a l'índex</a></p>
-    </article>
-    <article class="apartat" id="apartat4">
-      <h2>4. Comprovació final</h2>
-      <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-         tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
-         Abans de donar per acabat el sprint, revisa aquest resum:</p>
-      <ul>
-        <li>El sistema arrenca sense errors.</li>
-        <li>La xarxa respon correctament als <em>pings</em>.</li>
-        <li><strong>Els usuaris i grups creats coincideixen amb l'enunciat.</strong></li>
-      </ul>
-      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-         fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-         sequi nesciunt.</p>
-      <p class="tornar-index"><a href="#index-apartats">↑ Tornar a l'índex</a></p>
-    </article>
-    <article class="apartat" id="apartat5">
-    </article>
-  </section>
-</main>
+    <main>
+        <section>
+            <h2>Índex d'apartats</h2>
+            <ol>
+                <li><a href="#apartat1">Virtualització</a></li>
+                <li><a href="#apartat2">Instal·lació del sistema operatiu</a></li>
+                <li><a href="#apartat3">Xarxa bàsica</a></li>
+                <li><a href="#apartat4">Comandes generals</a></li>
+                <li><a href="#apartat5">Instal·lació d'aplicacions</a></li>
+            </ol>
+        </section>
 
-<footer class="peu">
-  <p class="peu-llicencia">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">
-      <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="Llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0" width="88" height="31">
-    </a>
-    <span>Contingut sota llicència <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">CC BY-NC-SA 4.0</a></span>
-  </p>
-  <p class="autoria">Autor/a: <strong>Alex Lopez Benitez/strong> · Pràctica 0 · Sistemes Operatius (ISOPJ1)</p>
-</footer>
+        <section id="apartat1">
+            <h2>1. Virtualització</h2>
+
+            <h3>1.1 Creació de la màquina virtual</h3>
+            <p>
+                He utilitzat VirtualBox per crear una màquina virtual. Això permet
+                executar un sistema operatiu dins de l'ordinador sense modificar
+                directament el sistema principal.
+            </p>
+
+            <h3>1.2 Configuració dels recursos</h3>
+            <p>
+                He configurat els recursos de la màquina virtual, com la memòria RAM
+                i l'espai de disc, abans de començar la instal·lació.
+            </p>
+
+            <h3>1.3 Instal·lació del sistema</h3>
+            <p>
+                Després de seleccionar la imatge ISO, he iniciat la instal·lació
+                del sistema operatiu dins de VirtualBox.
+            </p>
+
+            <p><a href="#top">Tornar a l'índex</a></p>
+        </section>
+
+        <section id="apartat2">
+            <h2>2. Instal·lació del sistema operatiu</h2>
+
+            <h3>2.1 Preparació de la instal·lació</h3>
+            <p>
+                Abans d'instal·lar Ubuntu, he revisat les opcions de configuració
+                i he seleccionat el tipus d'instal·lació.
+            </p>
+
+            <h3>2.2 Particions del disc</h3>
+            <p>
+                He treballat amb les particions del disc per separar l'espai destinat
+                al sistema, als fitxers personals i a la memòria d'intercanvi.
+            </p>
+
+            <h3>2.3 Comprovació final</h3>
+            <p>
+                En acabar la instal·lació, he iniciat Ubuntu per comprovar que el
+                sistema operatiu funcionava correctament.
+            </p>
+
+            <p><a href="#top">Tornar a l'índex</a></p>
+        </section>
+
+        <section id="apartat3">
+            <h2>3. Xarxa bàsica</h2>
+
+            <h3>3.1 Consulta de la xarxa</h3>
+            <p>
+                He utilitzat una ordre del terminal per consultar les interfícies
+                de xarxa i les adreces IP de l'equip.
+            </p>
+            <pre><code>ip a</code></pre>
+
+            <h3>3.2 Comprovació de la connexió</h3>
+            <p>
+                He utilitzat ping per comprovar si l'equip podia comunicar-se amb
+                altres dispositius i accedir a Internet.
+            </p>
+            <pre><code>ping -c 4 google.com</code></pre>
+
+            <h3>3.3 Configuració IP</h3>
+            <p>
+                He revisat els paràmetres de xarxa, com l'adreça IP, la màscara,
+                la passarel·la i els servidors DNS.
+            </p>
+
+            <p><a href="#top">Tornar a l'índex</a></p>
+        </section>
+
+        <section id="apartat4">
+            <h2>4. Comandes generals</h2>
+
+            <p>
+                En aquesta pràctica he après a utilitzar el terminal de Linux per
+                navegar per directoris, gestionar fitxers, consultar informació
+                del sistema i treballar amb permisos.
+            </p>
+
+            <h3>4.1 Navegació pel terminal</h3>
+            <p>
+                He consultat la ubicació actual, el llistat de fitxers i he accedit
+                a diferents directoris.
+            </p>
+            <pre><code>pwd
+ls
+ls -la
+cd /etc
+cd ~</code></pre>
+
+            <h3>4.2 Creació de carpetes i fitxers</h3>
+            <p>
+                He creat la carpeta practiques i les subcarpetes necessàries.
+                També he creat fitxers de text i un fitxer d'imatge.
+            </p>
+            <pre><code>mkdir practiques
+cd practiques
+mkdir docs imatges copies
+touch nota1.txt nota2.txt foto.png</code></pre>
+
+            <h3>4.3 Còpia i moviment de fitxers</h3>
+            <p>
+                He practicat com copiar fitxers, canviar-ne el nom i moure'ls
+                entre carpetes amb cp i mv.
+            </p>
+            <pre><code>cp nota1.txt copies/
+mv nota2.txt resum.txt
+mv foto.png imatges/</code></pre>
+
+            <h3>4.4 Informació i permisos</h3>
+            <p>
+                He consultat informació del sistema i he comprovat la diferència
+                entre treballar com a usuari normal i amb permisos d'administrador.
+            </p>
+            <pre><code>uname -a
+whoami
+sudo ls /root</code></pre>
+
+            <h3>4.5 Redireccions i historial</h3>
+            <p>
+                He guardat informació en fitxers utilitzant redireccions i he
+                desat les últimes ordres executades al terminal.
+            </p>
+            <pre><code>uname -a > sistema.txt
+date >> sistema.txt
+history | tail -15 > comandes.txt</code></pre>
+
+            <p><a href="#top">Tornar a l'índex</a></p>
+        </section>
+
+        <section id="apartat5">
+            <h2>5. Instal·lació d'aplicacions</h2>
+
+            <p>
+                En aquesta pràctica he treballat amb la instal·lació i eliminació
+                d'aplicacions a Ubuntu mitjançant eines de gestió de paquets.
+            </p>
+
+            <h3>5.1 Instal·lació de Pacman</h3>
+            <p>
+                He instal·lat el paquet compatible amb el sistema des del terminal
+                i després he comprovat si estava instal·lat.
+            </p>
+            <pre><code>sudo apt install ./pacman.deb
+dpkg -l | grep pacman</code></pre>
+
+            <h3>5.2 Eliminació de Pacman</h3>
+            <p>
+                Després de provar l'aplicació, l'he desinstal·lat i he tornat a
+                consultar l'estat del paquet.
+            </p>
+            <pre><code>sudo apt remove pacman
+dpkg -l | grep pacman</code></pre>
+
+            <h3>5.3 Altres eines d'instal·lació</h3>
+            <p>
+                També he practicat la instal·lació de paquets amb eines com dpkg
+                i Aptitude, i he comprovat les dependències quan ha estat necessari.
+            </p>
+            <pre><code>sudo dpkg -i paquet.deb
+sudo apt --fix-broken install
+sudo apt install aptitude</code></pre>
+
+            <p><a href="#top">Tornar a l'índex</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sprint 1 · Sistemes Informàtics</p>
+    </footer>
 
 </body>
 </html>
+
