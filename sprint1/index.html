@@ -23,187 +23,67 @@
     </nav>
 
     <main>
-        <section>
-            <h2>Índex d'apartats</h2>
-            <ol>
-                <li><a href="#apartat1">Virtualització</a></li>
-                <li><a href="#apartat2">Instal·lació del sistema operatiu</a></li>
-                <li><a href="#apartat3">Xarxa bàsica</a></li>
-                <li><a href="#apartat4">Comandes generals</a></li>
-                <li><a href="#apartat5">Instal·lació d'aplicacions</a></li>
-            </ol>
-        </section>
-
         <section id="apartat1">
-            <h2>1. Virtualització</h2>
+    <h2>1. Virtualització i instal·lació del sistema operatiu</h2>
 
-            <h3>1.1 Creació de la màquina virtual</h3>
-            <p>
-                He utilitzat VirtualBox per crear una màquina virtual. Això permet
-                executar un sistema operatiu dins de l'ordinador sense modificar
-                directament el sistema principal.
-            </p>
+    <ol>
+        <li>Crear una màquina virtual amb la memòria RAM i el disc assignats.</li>
+        <li>Comprovar la configuració de xarxa de la màquina virtual.</li>
+        <li>Carregar la imatge ISO i iniciar la instal·lació del sistema operatiu.</li>
+        <li>Crear les particions del disc durant la instal·lació.</li>
+        <li>Comprovar que el sistema s'inicia correctament.</li>
+    </ol>
+</section>
 
-            <h3>1.2 Configuració dels recursos</h3>
-            <p>
-                He configurat els recursos de la màquina virtual, com la memòria RAM
-                i l'espai de disc, abans de començar la instal·lació.
-            </p>
+<section id="apartat2">
+    <h2>2. Configuració del sistema operatiu</h2>
 
-            <h3>1.3 Instal·lació del sistema</h3>
-            <p>
-                Després de seleccionar la imatge ISO, he iniciat la instal·lació
-                del sistema operatiu dins de VirtualBox.
-            </p>
+    <ol>
+        <li>Consultar la informació bàsica del sistema operatiu instal·lat.</li>
+        <li>Identificar els components principals i les seves funcions.</li>
+        <li>Revisar la configuració del sistema i les opcions disponibles.</li>
+        <li>Comprovar les opcions d'actualització i recuperació del sistema.</li>
+    </ol>
+</section>
 
-            <p><a href="#top">Tornar a l'índex</a></p>
-        </section>
+<section id="apartat3">
+    <h2>3. Gestió de particions i emmagatzematge</h2>
 
-        <section id="apartat2">
-            <h2>2. Instal·lació del sistema operatiu</h2>
+    <ol>
+        <li>Consultar les particions i les unitats disponibles.</li>
+        <li>Identificar l'espai assignat al sistema operatiu i l'espai lliure.</li>
+        <li>Crear o configurar particions segons les indicacions de la pràctica.</li>
+        <li>Comprovar que les unitats creades apareixen correctament al sistema.</li>
+    </ol>
+</section>
 
-            <h3>2.1 Preparació de la instal·lació</h3>
-            <p>
-                Abans d'instal·lar Ubuntu, he revisat les opcions de configuració
-                i he seleccionat el tipus d'instal·lació.
-            </p>
+<section id="apartat4">
+    <h2>4. Comandes generals de Linux</h2>
 
-            <h3>2.2 Particions del disc</h3>
-            <p>
-                He treballat amb les particions del disc per separar l'espai destinat
-                al sistema, als fitxers personals i a la memòria d'intercanvi.
-            </p>
+    <ol>
+        <li>Consultar el directori actual i llistar-ne el contingut, incloent-hi els fitxers ocults i els detalls dels fitxers.</li>
+        <li>Navegar pels directoris del sistema, consultar el manual de les comandes i trobar opcions útils.</li>
+        <li>Crear la carpeta <code>practiques</code> i, a dins, les carpetes <code>docs</code>, <code>imatges</code> i <code>copies</code>.</li>
+        <li>Crear fitxers de text i d'imatge, editar-ne el contingut i consultar-lo.</li>
+        <li>Copiar, canviar el nom i moure fitxers entre carpetes, utilitzant comodins per seleccionar diversos fitxers.</li>
+        <li>Treballar amb rutes absolutes i relatives per localitzar directoris.</li>
+        <li>Eliminar fitxers i carpetes, guardar llistats en fitxers de text i comprimir documents.</li>
+        <li>Consultar directoris amb permisos restringits i practicar el canvi entre l'usuari normal i l'administrador.</li>
+        <li>Crear les carpetes <code>repte</code>, <code>dades</code> i <code>backup</code>, i guardar-hi informació del sistema, la data i els usuaris connectats.</li>
+        <li>Filtrar informació d'un fitxer, fer-ne una còpia de seguretat i guardar les últimes comandes de l'historial.</li>
+    </ol>
+</section>
 
-            <h3>2.3 Comprovació final</h3>
-            <p>
-                En acabar la instal·lació, he iniciat Ubuntu per comprovar que el
-                sistema operatiu funcionava correctament.
-            </p>
+<section id="apartat5">
+    <h2>5. Configuració i comprovació de la xarxa</h2>
 
-            <p><a href="#top">Tornar a l'índex</a></p>
-        </section>
-
-        <section id="apartat3">
-            <h2>3. Xarxa bàsica</h2>
-
-            <h3>3.1 Consulta de la xarxa</h3>
-            <p>
-                He utilitzat una ordre del terminal per consultar les interfícies
-                de xarxa i les adreces IP de l'equip.
-            </p>
-            <pre><code>ip a</code></pre>
-
-            <h3>3.2 Comprovació de la connexió</h3>
-            <p>
-                He utilitzat ping per comprovar si l'equip podia comunicar-se amb
-                altres dispositius i accedir a Internet.
-            </p>
-            <pre><code>ping -c 4 google.com</code></pre>
-
-            <h3>3.3 Configuració IP</h3>
-            <p>
-                He revisat els paràmetres de xarxa, com l'adreça IP, la màscara,
-                la passarel·la i els servidors DNS.
-            </p>
-
-            <p><a href="#top">Tornar a l'índex</a></p>
-        </section>
-
-        <section id="apartat4">
-            <h2>4. Comandes generals</h2>
-
-            <p>
-                En aquesta pràctica he après a utilitzar el terminal de Linux per
-                navegar per directoris, gestionar fitxers, consultar informació
-                del sistema i treballar amb permisos.
-            </p>
-
-            <h3>4.1 Navegació pel terminal</h3>
-            <p>
-                He consultat la ubicació actual, el llistat de fitxers i he accedit
-                a diferents directoris.
-            </p>
-            <pre><code>pwd
-ls
-ls -la
-cd /etc
-cd ~</code></pre>
-
-            <h3>4.2 Creació de carpetes i fitxers</h3>
-            <p>
-                He creat la carpeta practiques i les subcarpetes necessàries.
-                També he creat fitxers de text i un fitxer d'imatge.
-            </p>
-            <pre><code>mkdir practiques
-cd practiques
-mkdir docs imatges copies
-touch nota1.txt nota2.txt foto.png</code></pre>
-
-            <h3>4.3 Còpia i moviment de fitxers</h3>
-            <p>
-                He practicat com copiar fitxers, canviar-ne el nom i moure'ls
-                entre carpetes amb cp i mv.
-            </p>
-            <pre><code>cp nota1.txt copies/
-mv nota2.txt resum.txt
-mv foto.png imatges/</code></pre>
-
-            <h3>4.4 Informació i permisos</h3>
-            <p>
-                He consultat informació del sistema i he comprovat la diferència
-                entre treballar com a usuari normal i amb permisos d'administrador.
-            </p>
-            <pre><code>uname -a
-whoami
-sudo ls /root</code></pre>
-
-            <h3>4.5 Redireccions i historial</h3>
-            <p>
-                He guardat informació en fitxers utilitzant redireccions i he
-                desat les últimes ordres executades al terminal.
-            </p>
-            <pre><code>uname -a > sistema.txt
-date >> sistema.txt
-history | tail -15 > comandes.txt</code></pre>
-
-            <p><a href="#top">Tornar a l'índex</a></p>
-        </section>
-
-        <section id="apartat5">
-            <h2>5. Instal·lació d'aplicacions</h2>
-
-            <p>
-                En aquesta pràctica he treballat amb la instal·lació i eliminació
-                d'aplicacions a Ubuntu mitjançant eines de gestió de paquets.
-            </p>
-
-            <h3>5.1 Instal·lació de Pacman</h3>
-            <p>
-                He instal·lat el paquet compatible amb el sistema des del terminal
-                i després he comprovat si estava instal·lat.
-            </p>
-            <pre><code>sudo apt install ./pacman.deb
-dpkg -l | grep pacman</code></pre>
-
-            <h3>5.2 Eliminació de Pacman</h3>
-            <p>
-                Després de provar l'aplicació, l'he desinstal·lat i he tornat a
-                consultar l'estat del paquet.
-            </p>
-            <pre><code>sudo apt remove pacman
-dpkg -l | grep pacman</code></pre>
-
-            <h3>5.3 Altres eines d'instal·lació</h3>
-            <p>
-                També he practicat la instal·lació de paquets amb eines com dpkg
-                i Aptitude, i he comprovat les dependències quan ha estat necessari.
-            </p>
-            <pre><code>sudo dpkg -i paquet.deb
-sudo apt --fix-broken install
-sudo apt install aptitude</code></pre>
-
-            <p><a href="#top">Tornar a l'índex</a></p>
-        </section>
+    <ol>
+        <li>Consultar la configuració de xarxa de l'equip i comprovar la connexió amb una adreça web i una adreça IP.</li>
+        <li>Desconnectar temporalment l'adaptador de xarxa de la màquina virtual i comprovar què passa amb la connexió.</li>
+        <li>Tornar a connectar l'adaptador i canviar-ne el mode de connexió per comparar els resultats.</li>
+        <li>Modificar temporalment la configuració DNS, comprovar la connexió i després restaurar la configuració automàtica.</li>
+    </ol>
+</section>
     </main>
 
     <footer>
