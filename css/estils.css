@@ -386,3 +386,19 @@ footer.peu .autoria strong {
 .boton-documento:hover {
   background-color: #087f8c;
 }
+
+
+/* Joc Tetris integrat a la portada */
+.tetris-titol { color: var(--mari); margin: 12px 0 4px; }
+.tetris-descripcio, .tetris-ajuda { color: var(--tinta-suau); margin: 6px 0 16px; }
+.tetris-marc { max-width: 520px; margin: 18px auto; padding: 18px; background: #080d1c; color: #ffe600; border: 1px solid #1859ff; border-radius: 12px; }
+.tetris-info { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; font-size: .85rem; font-weight: 700; }
+#tetrisCanvas { display: block; width: min(100%, 300px); height: auto; margin: 0 auto; background: #050914; border: 2px solid #244b9b; outline: none; image-rendering: pixelated; }
+.tetris-missatge { color: #fff; min-height: 24px; margin: 10px 0; font-size: .9rem; }
+.tetris-botons-mobils { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 12px 0; }
+.tetris-botons-mobils button { background: #193b80; color: #fff; border: 1px solid #477bff; border-radius: 8px; padding: 10px 14px; font-weight: 700; cursor: pointer; }
+.tetris-botons-mobils button:hover { background: #2855aa; }
+.tetris-reiniciar { background: #244782; margin-top: 4px; }
+.enllacos-tetris { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; margin-top: 20px; }
+.enllacos-tetris .boton-documento { font-size: 1rem; padding: 12px 26px; margin: 8px 0 0; }
+@media (max-width: 480px) { .panell { padding: 22px 14px; } .tetris-marc { padding: 10px; } .tetris-info { font-size: .75rem; } }

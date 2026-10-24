@@ -12,7 +12,7 @@
   <nav class="hero-nav">
     <a href="index.html">Portada</a>
     <a href="sprints.html">Índex de sprints</a>
-    <a href="https://github.com/alexlopez-lgtm target="_blank" rel="noopener">Codi a GitHub ↗</a>
+    <a href="https://github.com/alexlopez-lgtm" target="_blank" rel="noopener">Codi a GitHub ↗</a>
   </nav>
   <div class="hero-titol">
     <h1>Sistemes Operatius</h1>
@@ -22,8 +22,6 @@
 
 <main class="contenidor">
   <section class="panell portada-hero">
-    <img src="img/portada.svg" alt="Il·lustració d'un terminal de sistema operatiu" class="imatge-portada">
-
     <div class="fitxa-alumne">
       <p><strong>Alumne/a:</strong> Alex Lopez Benitez</p>
       <p><strong>Curs:</strong> 2026-2027</p>
@@ -31,9 +29,32 @@
       <p><strong>Repositori:</strong> sistemes_operatius</p>
     </div>
 
-    <br>
-    <a class="boto" href="sprints.html">Ubuntu</a>
-    <a class="boton-documento" href="windows.html">Windows</a>  
+    <h2 class="tetris-titol">Tetris dels sistemes operatius</h2>
+    <p class="tetris-descripcio">Encaixa les peces, completa línies i aconsegueix la màxima puntuació.</p>
+
+    <div class="tetris-marc">
+      <div class="tetris-info">
+        <span>PUNTS: <strong id="tetrisPunts">0</strong></span>
+        <span>LÍNIES: <strong id="tetrisLinies">0</strong></span>
+        <span>NIVELL: <strong id="tetrisNivell">1</strong></span>
+      </div>
+      <canvas id="tetrisCanvas" width="300" height="600" aria-label="Joc Tetris. Utilitza les fletxes del teclat per moure les peces." tabindex="0"></canvas>
+      <p id="tetrisMissatge" class="tetris-missatge" aria-live="polite">Prem una fletxa o el botó Iniciar per començar.</p>
+      <div class="tetris-botons-mobils" aria-label="Controls tàctils de Tetris">
+        <button type="button" data-tetris="left" aria-label="Moure a l'esquerra">◀</button>
+        <button type="button" data-tetris="rotate" aria-label="Girar peça">↻ Girar</button>
+        <button type="button" data-tetris="right" aria-label="Moure a la dreta">▶</button>
+        <button type="button" data-tetris="down" aria-label="Baixar peça">▼</button>
+        <button type="button" data-tetris="drop" aria-label="Baixar peça ràpidament">Baixada ràpida</button>
+      </div>
+      <button id="tetrisReiniciar" class="boto tetris-reiniciar" type="button">Iniciar / reiniciar</button>
+    </div>
+    <p class="tetris-ajuda">Controls: ← → moure · ↑ girar · ↓ baixar · Espai: baixada ràpida.</p>
+
+    <div class="enllacos-tetris">
+      <a class="boto" href="sprints.html">Ubuntu →</a>
+      <a class="boton-documento" href="windows.html">Windows →</a>
+    </div>
     
     <div class="bloc-llicencia">
       <h3>Llicència d'aquest treball</h3>
@@ -64,5 +85,6 @@
   <p class="autoria">Autor/a: <strong>Nom Cognom1 Cognom2</strong> · Pràctica 0 · Sistemes Operatius (ISOPJ1)</p>
 </footer>
 
+<script src="js/tetris.js"></script>
 </body>
 </html>
